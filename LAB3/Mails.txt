@@ -1,0 +1,11 @@
+From: author@example.com
+
+User-Agent: Thunderbird 1.5.0.9 (X11/20061227)
+
+date:  24 march 2021
+
+To: editor@example.com
+
+subject: test email
+
+

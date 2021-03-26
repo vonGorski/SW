@@ -1,16 +1,22 @@
-print("Zad1")
+print("Zadanie 1 - Krzysztof Górski")
 
+while True:
 
+    word = input('Write a word or phrase:  ')
+    dictionary = {}
 
-s = "Jestem bardzo dobrym studentem"
-d = {}
+    for i in word:
+        i = i.lower()
+        
+        if i in dictionary: 
+            dictionary[i] += 1
+        else: 
+            dictionary[i] = 1
 
-for x in s:
-    x = x.lower()
-    if x != ' ': #Ni e z l i c z a s p a c j i
-        if x in d: #Gdy z n a k s i e p o w t a r z a
-            d[x] += 1
-        else: #Gdy z n a k j e s z c z e n i e w y s t a p i l
-            d[x] = 1
+    print("occurency of signs: ", dictionary)
 
-print("Liczba wystapien:", d)
+    t = input('end program? (T/F)')
+    if t == 'T':
+        break
+
+print('End')
